@@ -226,7 +226,6 @@ def main(win, width):
 					for row in grid:
 						for spot in row:
 							spot.update_neighbors(grid)
-
 					algorithm(lambda: draw(win, grid, ROWS, width), grid, start, end)
 
 				if event.key == pygame.K_c:
