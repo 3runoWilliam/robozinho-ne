@@ -99,7 +99,6 @@ def reconstruct_path(came_from, current, draw):
 		current.make_path()
 		draw()
 
-
 def algorithm(draw, grid, start, end):
 	count = 0
 	open_set = PriorityQueue()
@@ -137,14 +136,12 @@ def algorithm(draw, grid, start, end):
 					open_set.put((f_score[neighbor], count, neighbor))
 					open_set_hash.add(neighbor)
 					neighbor.make_open()
-
 		draw()
 
 		if current != start:
 			current.make_closed()
 
 	return False
-
 
 def make_grid(rows, width):
 	grid = []
