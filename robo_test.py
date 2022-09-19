@@ -137,7 +137,6 @@ def algorithm(draw, grid, start, end):
 					open_set_hash.add(neighbor)
 					neighbor.make_open()
 		draw()
-
 		if current != start:
 			current.make_closed()
 
@@ -153,7 +152,6 @@ def make_grid(rows, width):
 			grid[i].append(spot)
 
 	return grid
-
 
 def draw_grid(win, rows, width):
 	gap = width // rows
