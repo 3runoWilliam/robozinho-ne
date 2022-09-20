@@ -150,7 +150,6 @@ def make_grid(rows, width):
 		for j in range(rows):
 			spot = Spot(i, j, gap, rows)
 			grid[i].append(spot)
-
 	return grid
 
 def draw_grid(win, rows, width):
