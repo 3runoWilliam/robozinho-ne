@@ -139,7 +139,6 @@ def algorithm(draw, grid, start, end):
 		draw()
 		if current != start:
 			current.make_closed()
-
 	return False
 
 def make_grid(rows, width):
@@ -169,7 +168,6 @@ def draw(win, grid, rows, width):
 
 	draw_grid(win, rows, width)
 	pygame.display.update()
-
 
 def get_clicked_pos(pos, rows, width):
 	gap = width // rows
